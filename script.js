@@ -42,139 +42,413 @@ const phases = [
             },
             {
                 id: 'a2',
-                title: 'Criar Cloudflare e migrar DNS',
-                time: '2 dias',
-                responsible: 'TI/Suporte Técnico',
+                title: 'Criar Business Manager Facebook + Verificar Domínio + Integração WhatsApp API',
+                time: '5-7 dias',
+                responsible: 'TI/Marketing/Gestor',
                 tasks: [
-                    'Criar conta Cloudflare',
-                    'Migrar DNS do domínio',
-                    'Configurar SSL e cache',
-                    'Testar site funcionando normalmente'
+                    '📌 ETAPA 1 – Estruturação do Facebook Business Manager (BM)',
+                    '• Criação e configuração do Portfólio Empresarial no Facebook Business Manager',
+                    '• Inclusão, validação e aprovação do domínio oficial da clínica junto à Meta',
+                    '',
+                    '📌 ETAPA 2 – Configuração de Aplicação na Meta Developers',
+                    '• Criação de aplicativo na plataforma Meta for Developers',
+                    '• Configuração das permissões necessárias para uso da API Oficial do WhatsApp',
+                    '• Preparação do ambiente para integração com o CRM',
+                    '',
+                    '📌 ETAPA 3 – Integração da API Oficial do WhatsApp',
+                    '• Vinculação do número principal de WhatsApp à API Oficial para atendimento ao paciente',
+                    '• Integração da API Oficial com o CRM para automação, histórico de conversas e gestão de leads',
+                    '',
+                    '📌 ETAPA 4 – Configuração de API Alternativa para Prospecção',
+                    '• Vinculação de um segundo número de WhatsApp a uma API não oficial (Baileys)',
+                    '• Utilização deste número para prospecção ativa, comunicação em grupos e ações operacionais específicas',
+                    '',
+                    '📌 ETAPA 5 – Verificação e Selos de Autenticidade',
+                    '• Solicitação e obtenção de dois Selos Azuis de verificação junto à Meta (um para cada número)',
+                    '• Consolidação da identidade digital da clínica, garantindo maior credibilidade e profissionalismo'
                 ],
-                delivery: 'DNS Cloudflare funcionando (site carregando normalmente)'
+                benefits: [
+                    'Redução de riscos de fraudes e golpes',
+                    'Aumento da confiança do paciente ao interagir com números verificados',
+                    'Padronização e profissionalização dos canais oficiais de comunicação',
+                    'Base técnica preparada para crescimento escalável e integrações futuras'
+                ],
+                delivery: 'Business Manager aprovado, domínio verificado, 2 APIs WhatsApp integradas (Oficial + Baileys), 2 Selos Azuis obtidos'
             },
             {
                 id: 'a3',
-                title: 'Criar Business Manager Facebook + verificar domínio',
-                time: '3 dias',
-                responsible: 'Marketing/Gestor',
+                title: 'Implantação da Arquitetura de Automação, APIs e Inteligência Artificial',
+                time: '7-10 dias',
+                responsible: 'TI/Desenvolvedor/Gestor',
                 tasks: [
-                    'Criar conta Business Manager',
-                    'Vincular página do Instagram',
-                    'Verificar domínio',
-                    'Instalar Meta Pixel'
+                    '📌 ETAPA 1 – Configuração das APIs da Meta (Instagram, Facebook e Messenger)',
+                    '• Criação e configuração das APIs do Instagram, Facebook Pages e Messenger',
+                    '• Integração da Meta Ads API para leitura, consumo e automação de dados de campanhas publicitárias',
+                    '',
+                    '📌 ETAPA 2 – Configuração das APIs do Google',
+                    '• Criação e gerenciamento das APIs do Google para integração com n8n (Gmail, Sheets, Calendar, etc.)',
+                    '• Provisionamento e gerenciamento de credenciais e chaves de acesso seguindo boas práticas de segurança',
+                    '',
+                    '📌 ETAPA 3 – Provisionamento da API da OpenAI',
+                    '• Criação e configuração da chave de API da OpenAI para utilização da inteligência artificial',
+                    '• Definição de permissões, limites de uso e políticas de segurança para consumo da API',
+                    '',
+                    '📌 ETAPA 4 – Criação e Treinamento da Inteligência Artificial',
+                    '• Desenvolvimento e treinamento da IA para atendimento automatizado',
+                    '• Configuração da IA para responder dúvidas frequentes, qualificar leads e realizar marcações de atendimentos',
+                    '• Ativação dos canais de atendimento automatizado via WhatsApp e Instagram',
+                    '',
+                    '📌 ETAPA 5 – Estratégia de Contato Automático via WhatsApp',
+                    '• Implementação de estratégia de acionamento automático de leads via WhatsApp',
+                    '• Integração entre formulários, redes sociais e CRM para disparo inteligente de mensagens iniciais',
+                    '',
+                    '📌 ETAPA 6 – Estruturação dos Funis Inbound no CRM',
+                    '• Criação e configuração dos funis de inbound marketing no CRM',
+                    '• Definição do fluxo de atendimento inicial realizado pela IA quando o lead inicia o contato',
+                    '• Automação da movimentação dos cards de leads dentro do CRM conforme estágio do funil'
                 ],
-                delivery: 'Business Manager aprovada e domínio verificado'
+                benefits: [
+                    'Atendimento automatizado, padronizado e escalável',
+                    'Redução significativa do tempo operacional da equipe',
+                    'Qualificação inteligente e automática de leads',
+                    'Integração completa entre canais digitais, inteligência artificial e CRM',
+                    'Arquitetura técnica preparada para crescimento contínuo e expansão futura'
+                ],
+                delivery: 'APIs Meta/Google/OpenAI configuradas, IA treinada e ativa, automação WhatsApp funcionando, funis CRM estruturados'
             },
             {
                 id: 'a4',
-                title: 'Instalar Google Tag Manager, GA4, Meta Pixel',
-                time: '2 dias',
-                responsible: 'TI/Marketing',
+                title: 'Implantação de Follow-ups Inteligentes, Funis Outbound e Gestão de Satisfação (CSAT)',
+                time: '10-14 dias',
+                responsible: 'TI/Marketing/Atendimento',
                 tasks: [
-                    'Criar conta GTM',
-                    'Instalar container no site',
-                    'Configurar GA4',
-                    'Adicionar Meta Pixel via GTM',
-                    'Testar eventos de conversão'
+                    '📌 ETAPA 1 – Follow-ups Inteligentes Contextuais',
+                    '• Configuração de follow-ups automáticos baseados no contexto da conversa',
+                    '• Identificação de intenções do lead (solicitação de preço, orçamento, consulta)',
+                    '• Disparo automático de mensagens 2h após contato inicial via API Oficial WhatsApp (janela 24h)',
+                    '• Acompanhamento automático para todo lead que solicite orçamento sem concluir agendamento',
+                    '',
+                    '📌 ETAPA 2 – Estrutura de Automação (CRM ou n8n)',
+                    '• Automação nativa no CRM: regras internas, gatilhos e fluxos predefinidos',
+                    '• Automação avançada via n8n: maior inteligência, flexibilidade e escalabilidade',
+                    '• Definição da arquitetura conforme volume de leads e complexidade operacional',
+                    '',
+                    '📌 ETAPA 3 – Criação do Funil Outbound',
+                    '• Estruturação do funil outbound no CRM para: clientes inativos, conversas abandonadas, prospecção ativa',
+                    '• Definição de estágios, critérios de avanço e automações associadas',
+                    '',
+                    '📌 ETAPA 4 – Padronização de Atendimento e Scripts',
+                    '• Criação de scripts de atendimento padronizados',
+                    '• Configuração de mensagens rápidas (quick replies)',
+                    '• Definição de mensagens de encerramento e despedida',
+                    '• Padronização da comunicação para clareza, consistência e profissionalismo',
+                    '',
+                    '📌 ETAPA 5 – Implementação do CSAT (Customer Satisfaction Score)',
+                    '• Fluxo de CSAT com escala 1-5: 1⭐ Muito insatisfeito → 5⭐ Muito satisfeito',
+                    '• Coleta da percepção do cliente imediatamente após o atendimento',
+                    '',
+                    '📌 ETAPA 6 – Uso Estratégico do CSAT no CRM',
+                    '• Identificar problemas antes que evoluam para reclamações',
+                    '• Ajustar processos e fluxos de atendimento',
+                    '• Detectar falhas por canal ou atendente',
+                    '• Orientar ações de melhoria contínua com decisões baseadas em dados',
+                    '',
+                    '📌 ETAPA 7 – Automação de Prioridade por Nota',
+                    '• Cliente 5⭐ → segue fluxo normal',
+                    '• Cliente 3⭐ → contato leve de acompanhamento',
+                    '• Cliente 1-2⭐ → acionamento imediato da equipe',
+                    '• Priorização inteligente de clientes em risco',
+                    '',
+                    '📌 ETAPA 8 – Redução de Churn e Base para Customer Success',
+                    '• CSAT como indicador de risco de cancelamento (churn)',
+                    '• Identificação proativa de clientes insatisfeitos antes da perda',
+                    '• Alimentação do pipeline de Customer Success: status de risco, retenção, upsell',
+                    '',
+                    '📌 ETAPA 9 – Automação de Avaliação no Google Meu Negócio',
+                    '• Automação para clientes com notas 4-5⭐',
+                    '• Disparo automático solicitando avaliação no Google',
+                    '• Script: "Que bom saber que você ficou satisfeito(a), {{nome}}! ⭐ Se puder, deixe sua avaliação no Google — isso nos ajuda demais 😊 👉 {{link_google}}"'
                 ],
-                delivery: 'GA4 coletando dados de visitantes e pixel rastreando'
+                benefits: [
+                    'Atendimento mais inteligente, contextual e automatizado',
+                    'Aumento da conversão de orçamentos em agendamentos',
+                    'Redução de churn e abandono silencioso',
+                    'Melhoria contínua da experiência do cliente',
+                    'Fortalecimento da reputação online da empresa',
+                    'Decisões estratégicas baseadas em dados reais, não em achismos'
+                ],
+                delivery: 'Follow-ups automáticos ativos, funil outbound estruturado, CSAT implementado, automação Google Reviews funcionando'
             }
         ]
     },
     {
         id: 'semana-3',
-        name: 'Quick Wins Visuais',
+        name: 'Auditoria e Inventário de Canais Digitais',
         weeks: 'Semana 3',
-        objective: 'Gerar momentum e engajamento da equipe com resultados visíveis',
-        icon: '✨',
+        objective: 'Mapear, padronizar e estruturar todos os ativos digitais da Clínica Vitória, garantindo rastreabilidade de dados, integração entre plataformas e uma base técnica sólida para estratégias de tráfego pago, análise de performance e crescimento digital.',
+        icon: '🔍',
         color: '#8b5cf6',
         actions: [
             {
                 id: 'a5',
-                title: 'Reorganização física da recepção',
+                title: 'Auditoria de Canais Digitais',
                 time: '2 dias',
-                responsible: 'Recepção/Gestor',
+                responsible: 'Marketing/TI',
                 tasks: [
-                    'Tirar foto "antes"',
-                    'Organizar papéis, arquivos, área de espera',
-                    'Tirar foto "depois" e compartilhar com equipe',
-                    'Celebrar a mudança visual'
+                    '📌 Levantamento completo de todos os canais digitais ativos e inativos da clínica',
+                    '• Identificação de perfis oficiais, perfis antigos, duplicados ou não utilizados',
+                    '• Validação de acessos administrativos e níveis de permissão em cada canal',
+                    '',
+                    '📌 Canais analisados:',
+                    '• Instagram (@clinicavitoriavc e demais perfis relacionados)',
+                    '• Facebook',
+                    '• Google Meu Negócio',
+                    '• WhatsApp Business',
+                    '• Site institucional',
+                    '• Outras redes ou plataformas eventualmente ativas'
                 ],
-                delivery: 'Fotos antes/depois da recepção documentadas'
+                delivery: 'Relatório completo de auditoria de todos os canais digitais'
             },
             {
                 id: 'a6',
-                title: 'Identidade visual WhatsApp',
+                title: 'Inventário Digital Centralizado',
                 time: '1 dia',
-                responsible: 'Marketing',
+                responsible: 'TI/Gestor',
                 tasks: [
-                    'Foto de perfil profissional (logo da clínica)',
-                    'Banner com horário de atendimento',
-                    'Mensagem automática de ausência configurada',
-                    'Catálogo de serviços atualizado'
+                    '📌 Criação de inventário centralizado contendo:',
+                    '• Nome do canal',
+                    '• URL',
+                    '• Status (ativo / inativo)',
+                    '• Tipo de conta (pessoal, comercial ou business)',
+                    '• Acessos administrativos',
+                    '',
+                    '📌 Consolidação da documentação oficial dos ativos digitais da Clínica Vitória'
                 ],
-                delivery: 'WhatsApp com identidade visual profissional'
+                delivery: 'Planilha/documento de inventário digital completo e organizado'
             },
             {
                 id: 'a7',
-                title: 'Mini-campanha interna "Semana da Transformação"',
+                title: 'Infraestrutura de Rastreamento (GTM + Meta Pixel)',
                 time: '2 dias',
-                responsible: 'Gestor/RH',
+                responsible: 'TI/Marketing',
                 tasks: [
-                    'Criar cartaz "Semana da Transformação"',
-                    'Pequeno brinde/café especial para equipe',
-                    'Comunicar o "porquê" das mudanças',
-                    'Coletar feedback inicial da equipe'
+                    '📌 Criação e/ou validação do Meta Pixel',
+                    '• Instalação e configuração correta do Pixel via Google Tag Manager (GTM)',
+                    '• Verificação do disparo de eventos (PageView, ViewContent, Lead, entre outros)',
+                    '• Garantia de conformidade com boas práticas de mensuração e rastreamento'
                 ],
-                delivery: 'Equipe informada e engajada com as mudanças'
+                delivery: 'Meta Pixel instalado via GTM, eventos validados e funcionando corretamente'
+            },
+            {
+                id: 'a8',
+                title: 'Integração Meta (Instagram + Facebook Ads)',
+                time: '1 dia',
+                responsible: 'Marketing/TI',
+                tasks: [
+                    '📌 Conexão do Instagram Business ao Facebook Ads Manager',
+                    '• Vinculação correta ao Business Manager da clínica',
+                    '• Validação de permissões, ativos digitais e contas de anúncios associadas'
+                ],
+                delivery: 'Instagram e Facebook Ads integrados corretamente ao Business Manager'
+            },
+            {
+                id: 'a9',
+                title: 'Análise de Audiência do Instagram',
+                time: '1 dia',
+                responsible: 'Marketing',
+                tasks: [
+                    '📌 Análise da base atual de seguidores do Instagram',
+                    '• Identificação da distribuição geográfica da audiência',
+                    '• Levantamento do percentual dos ~16.000 seguidores localizados em Vitória da Conquista',
+                    '• Avaliação da relevância da audiência local para estratégias de tráfego pago, conversão e agendamento'
+                ],
+                delivery: 'Relatório de análise de audiência com métricas geográficas e recomendações'
+            },
+            {
+                id: 'a10',
+                title: 'Diagnóstico e Próximos Passos',
+                time: '1 dia',
+                responsible: 'Gestor/Marketing/TI',
+                tasks: [
+                    '📌 Identificação de gaps técnicos, riscos operacionais e oportunidades de otimização',
+                    '',
+                    '📌 Recomendações estratégicas para:',
+                    '• Tráfego pago',
+                    '• Conteúdo local e regional',
+                    '• Estratégias de crescimento digital',
+                    '• Integração com CRM e automações'
+                ],
+                delivery: 'Documento de diagnóstico com plano de ação para próximas fases'
+            },
+            {
+                id: 'a11',
+                title: 'Auditoria de Horários Ociosos',
+                time: '7 dias',
+                responsible: 'Gestor/Recepção',
+                tasks: [
+                    '📌 Monitoramento completo das agendas médicas por 7 dias consecutivos',
+                    '• Coleta de dados de ocupação por profissional, dia e turno',
+                    '• Consolidação das informações em base única para análise'
+                ],
+                delivery: 'Base de dados de ocupação completa de 7 dias'
+            },
+            {
+                id: 'a12',
+                title: 'Análise de Capacidade Produtiva',
+                time: '2 dias',
+                responsible: 'Gestor/TI',
+                tasks: [
+                    '📌 Identificação dos principais pontos de ociosidade:',
+                    '',
+                    '• Por profissional: Quais médicos apresentam maior volume de horários vagos',
+                    '• Por dia da semana: Identificação dos dias com menor fluxo de atendimentos',
+                    '• Por turno: Comparativo manhã vs tarde para identificar "buracos" na agenda'
+                ],
+                delivery: 'Relatório de análise de capacidade produtiva por profissional/dia/turno'
+            },
+            {
+                id: 'a13',
+                title: 'Análise de Capacidade vs. Produção Real + Mapa de Ociosidade',
+                time: '2 dias',
+                responsible: 'Gestor',
+                tasks: [
+                    '📌 Cálculo da capacidade máxima diária de atendimentos da clínica',
+                    '• Comparação com o volume médio real de atendimentos realizados',
+                    '• Identificação do gap produtivo (capacidade não utilizada)',
+                    '',
+                    '📌 ENTREGA: Mapa de Ociosidade',
+                    '• Visualização clara dos pontos de perda operacional',
+                    '• Identificação de onde a clínica perde faturamento potencial',
+                    '• Base para: campanhas de preenchimento, ajustes de escala, reorganização de horários'
+                ],
+                delivery: 'Mapa de Ociosidade com gap produtivo identificado e recomendações'
+            },
+            {
+                id: 'a14',
+                title: 'Eliminação de Redundâncias Operacionais',
+                time: '2 dias',
+                responsible: 'Gestor/TI',
+                tasks: [
+                    '📌 Mapeamento dos fluxos de atendimento e agendamento',
+                    '• Identificação de duplicidade de processos e ferramentas'
+                ],
+                delivery: 'Mapa de processos com redundâncias identificadas'
+            },
+            {
+                id: 'a15',
+                title: 'Consolidação de Canais e Agendas',
+                time: '3 dias',
+                responsible: 'Gestor/TI/Recepção',
+                tasks: [
+                    '📌 Unificação de todos os atendimentos em um único WhatsApp Business oficial',
+                    '• Consolidação das agendas médicas em um sistema centralizado',
+                    '• Eliminação de cenários onde múltiplas recepcionistas usam sistemas diferentes para agendamento'
+                ],
+                delivery: 'Canal único de WhatsApp e agenda centralizada funcionando'
+            },
+            {
+                id: 'a16',
+                title: 'Auditoria de Ferramentas e Custos + Lista de Cortes',
+                time: '2 dias',
+                responsible: 'Gestor/Financeiro',
+                tasks: [
+                    '📌 Levantamento de todas as ferramentas e softwares pagos',
+                    '• Identificação de sistemas: subutilizados, não utilizados, redundantes',
+                    '• Avaliação de custo-benefício real de cada ferramenta',
+                    '',
+                    '📌 ENTREGA: Lista de Cortes e Otimização de Custos',
+                    '• Relação de ferramentas e serviços passíveis de cancelamento',
+                    '• Estimativa de economia mensal (R$/mês) com eliminação de redundâncias',
+                    '• Recomendações de consolidação e padronização tecnológica'
+                ],
+                delivery: 'Lista de cortes com estimativa de economia mensal e recomendações'
             }
         ]
     },
     {
         id: 'semanas-4-5',
-        name: 'CRM + Base de Dados',
+        name: 'Implementação de CRM e Organização da Base de Pacientes',
         weeks: 'Semanas 4-5',
-        objective: 'Centralizar informações e criar fonte única de verdade',
+        objective: 'Centralizar e organizar todas as informações dos pacientes em um sistema de CRM, garantindo dados limpos, estruturados e segmentados para gestão eficiente, campanhas de reativação e análise estratégica da clínica.',
         icon: '📊',
         color: '#10b981',
         actions: [
             {
-                id: 'a8',
-                title: 'Implementar CRM escolhido (Kommo recomendado)',
+                id: 'a17',
+                title: 'Implementação do CRM',
+                time: '5 dias',
+                responsible: 'Gestor/TI',
+                tasks: [
+                    '📌 Seleção e configuração do CRM adequado para a clínica',
+                    '• Importação da base atual de pacientes (mesmo que proveniente de planilhas Excel)',
+                    '',
+                    '📌 Configuração dos campos essenciais:',
+                    '• Nome completo',
+                    '• Telefone',
+                    '• Última consulta',
+                    '• Especialidade',
+                    '• Origem do paciente (Google / Instagram / Indicação / Outros)',
+                    '',
+                    '📌 Criação do pipeline de atendimento:',
+                    '• Lead → Contato Feito → Agendado → Compareceu → Retorno',
+                    '',
+                    '📌 Treinamento da recepção:',
+                    '• Procedimento padrão: ao agendar, registrar no CRM a origem do paciente'
+                ],
+                delivery: 'CRM configurado e integrado com os primeiros 100 pacientes cadastrados'
+            },
+            {
+                id: 'a18',
+                title: 'Organização da Base de Dados',
                 time: '4 dias',
-                responsible: 'Gestor + TI',
+                responsible: 'Recepção/Estagiário/Gestor',
                 tasks: [
-                    'Criar conta no CRM escolhido',
-                    'Configurar campos personalizados para saúde',
-                    'Criar pipeline: Lead → 1º Contato → Agendado → Confirmado → Compareceu → Retorno',
-                    'Integrar com WhatsApp Business'
+                    '📌 Levantamento de todas as informações de pacientes dos últimos 6 meses:',
+                    '• Fichas físicas',
+                    '• Planilhas Excel',
+                    '',
+                    '📌 Criação de planilha mestra consolidando dados:',
+                    '• Nome | Telefone | Idade | Bairro | Última Consulta | Especialidade',
+                    '',
+                    '📌 Limpeza e padronização da base:',
+                    '• Remoção de duplicatas',
+                    '• Validação de números de telefone atuais',
+                    '• Correção de inconsistências nos dados',
+                    '',
+                    '📌 Segmentação da base:',
+                    '• Pacientes Inativos (sem atendimento nos últimos 6+ meses)',
+                    '• Pacientes Frequentes'
                 ],
-                delivery: 'CRM funcionando e integrado'
+                delivery: 'Planilha mestra limpa, padronizada e segmentada'
             },
             {
-                id: 'a9',
-                title: 'Importar base de pacientes existente',
-                time: '3 dias',
-                responsible: 'Recepção + Estagiário',
+                id: 'a19',
+                title: 'Integração e Importação Final no CRM',
+                time: '2 dias',
+                responsible: 'TI/Gestor',
                 tasks: [
-                    'Coletar todas as fontes de dados (Excel, fichas, sistema antigo)',
-                    'Padronizar formato: Nome | Telefone | Idade | Bairro | Última Consulta | Especialidade',
-                    'Limpar duplicatas e dados incompletos',
-                    'Importar para o CRM'
+                    '📌 Subida da base limpa e segmentada para o CRM',
+                    '• Garantia de integridade e consistência dos dados',
+                    '• Preparação da base para campanhas de reativação e comunicação segmentada'
                 ],
-                delivery: '100 pacientes cadastrados no CRM com dados completos'
+                benefits: [
+                    'Controle total da jornada do paciente dentro do CRM',
+                    'Dados consistentes e segmentados para ações de marketing, reativação e fidelização',
+                    'Recepção capacitada para registrar corretamente novas interações e consultas',
+                    'Melhoria da eficiência operacional e da comunicação com pacientes'
+                ],
+                delivery: 'Base de pacientes pronta, limpa, sem duplicidades, estruturada e pronta para ações de marketing e gestão'
             },
             {
-                id: 'a10',
-                title: 'Treinamento prático da recepção',
+                id: 'a20',
+                title: 'Treinamento Prático da Recepção',
                 time: '2 dias',
                 responsible: 'Gestor',
                 tasks: [
-                    'Sessão 1: Como cadastrar paciente no CRM (1h)',
-                    'Sessão 2: Como usar pipeline e registrar origem (1h)',
-                    'Gamificação: Meta diária de 20 cadastros/atualizações',
-                    'Placar semanal com premiação'
+                    '📌 Sessão 1: Como cadastrar paciente no CRM (1h)',
+                    '📌 Sessão 2: Como usar pipeline e registrar origem (1h)',
+                    '📌 Gamificação: Meta diária de 20 cadastros/atualizações',
+                    '📌 Placar semanal com premiação'
                 ],
                 delivery: 'Recepção usando CRM sem resistência'
             }
@@ -232,50 +506,98 @@ const phases = [
     },
     {
         id: 'semanas-8-13',
-        name: 'Experiência + Reputação',
+        name: 'Plano de Melhoria de Avaliação Google',
         weeks: 'Semanas 8-13',
-        objective: 'Subir nota Google de 3.7 para 4.3 ⭐',
+        objective: 'Elevar a nota média do Google de 3.7 para 4.3 ⭐ em 6 semanas, garantindo aumento de reputação, engajamento de pacientes e melhoria da percepção de qualidade.',
         icon: '⭐',
         color: '#ef4444',
+        justification: 'Com 50+ avaliações existentes, notas baixas diluem rapidamente a média. Meta realista: 0,6 pontos em 6 semanas, equivalente a 0,1 ponto por semana.',
         actions: [
             {
-                id: 'a14',
-                title: 'Implementar sistema CSAT pós-atendimento',
+                id: 'a24',
+                title: 'Implementação de Sistema de Coleta de Satisfação (CSAT)',
                 time: '3 dias',
                 responsible: 'TI/Marketing',
                 tasks: [
-                    'Criar fluxo automático após consulta',
-                    'Perguntar satisfação de 1 a 5',
-                    'Se 4-5: aguardar 2h e pedir avaliação Google',
-                    'Se 1-2: alerta imediato para gerente'
+                    '📌 Instalação de ferramenta de CSAT pós-atendimento',
+                    '• Registro automático de notas e comentários de pacientes',
+                    '• Integração com canais digitais (WhatsApp, e-mail, SMS) para monitoramento contínuo'
                 ],
-                delivery: 'CSAT coletado de 80%+ dos atendimentos'
+                delivery: 'Sistema CSAT funcionando e integrado. Coleta de feedback de pelo menos 80% dos atendimentos semanalmente.'
             },
             {
-                id: 'a15',
-                title: 'Campanha presencial de avaliações (QR Code)',
-                time: '2 dias',
-                responsible: 'Recepção/Marketing',
+                id: 'a25',
+                title: 'Automação de Solicitação de Avaliações Google',
+                time: '4 dias',
+                responsible: 'TI/Marketing/Recepção',
                 tasks: [
-                    'Criar banner A3 com QR Code para Google',
-                    'Posicionar em local visível na recepção',
-                    'Treinar equipe: "Quando paciente elogia, mostrar QR"',
-                    'Meta: 10+ novas avaliações positivas por semana'
+                    '📌 Envio automático de solicitação para pacientes satisfeitos (CSAT 4-5)',
+                    '• Campanha presencial com QR Code na recepção (banner A3)',
+                    '• Complemento via e-mail e SMS (opcional)',
+                    '',
+                    '📌 Timing de envio ideal:',
+                    '• Logo após consulta bem-sucedida',
+                    '• Após resolução de problema do paciente',
+                    '• Quando paciente elogia espontaneamente',
+                    '',
+                    '📌 Canais utilizados:',
+                    '• WhatsApp automático',
+                    '• QR Code físico na recepção',
+                    '• E-mail (quando disponível)',
+                    '• SMS como canal secundário'
                 ],
-                delivery: 'QR Code instalado e gerando avaliações'
+                delivery: 'Automação de solicitações ativa. Campanha presencial com QR Code implementada.'
             },
             {
-                id: 'a16',
-                title: 'Protocolo de resposta a avaliações negativas',
+                id: 'a26',
+                title: 'Protocolo de Gestão de Avaliações Negativas',
                 time: 'Contínuo',
                 responsible: 'Gestor/Atendimento',
                 tasks: [
-                    'Responder em até 4 horas úteis',
-                    'Formato: Agradecer → Desculpar → Oferecer solução → Contato direto',
-                    'Ação interna: Revisar processo que gerou problema',
-                    'Follow-up: Ligar para paciente em 24h'
+                    '📌 Responder todas as avaliações negativas em até 4 horas úteis',
+                    '',
+                    '📌 Estrutura da resposta:',
+                    '• Agradecer feedback',
+                    '• Pedir desculpas genuínas',
+                    '• Oferecer solução concreta',
+                    '• Convidar paciente para contato direto',
+                    '',
+                    '📌 Ações internas:',
+                    '• Revisar internamente o processo que gerou o problema',
+                    '• Realizar follow-up via ligação em 24h quando necessário'
                 ],
-                delivery: '100% de avaliações negativas respondidas'
+                delivery: 'Protocolo padronizado e treinado. Todas avaliações negativas respondidas dentro do prazo.'
+            },
+            {
+                id: 'a27',
+                title: 'Treinamento da Equipe para Avaliações',
+                time: '2 dias',
+                responsible: 'Gestor/RH',
+                tasks: [
+                    '📌 Capacitar a equipe para identificar momentos que geram avaliações positivas',
+                    '• Treinar recepção e profissionais em práticas de incentivo à avaliação espontânea'
+                ],
+                delivery: 'Sessão de treinamento concluída. Checklist de boas práticas aplicado nos atendimentos.'
+            },
+            {
+                id: 'a28',
+                title: 'Monitoramento e Validação Semanal',
+                time: 'Contínuo (6 semanas)',
+                responsible: 'Gestor/Marketing',
+                tasks: [
+                    '📌 Coleta de métricas semanais para medir progresso:',
+                    '• CSAT coletado de 80%+ dos atendimentos',
+                    '• 10+ novas avaliações Google positivas por semana',
+                    '• 100% das avaliações negativas respondidas',
+                    '• Nota média subindo mínimo de 0,1 ponto por semana'
+                ],
+                benefits: [
+                    'Coleta de CSAT automatizada',
+                    'Resposta rápida a avaliações negativas',
+                    'Engajamento contínuo de pacientes satisfeitos',
+                    'Campanhas presenciais e digitais integradas'
+                ],
+                delivery: 'Relatório semanal com métricas. Meta final: Nota Google 3.7 → 4.3 ⭐ até semana 13.'
             }
         ]
     },
@@ -283,48 +605,68 @@ const phases = [
         id: 'semanas-9-11',
         name: 'Otimização de Receita',
         weeks: 'Semanas 9-11',
-        objective: 'Aumentar faturamento sem aumentar custos de aquisição',
+        objective: 'Aumentar o faturamento da clínica sem aumentar os custos de aquisição, por meio da maximização da ocupação da agenda, reativação de pacientes inativos, programas de indicação e estratégias de upsell inteligentes.',
         icon: '💰',
         color: '#10b981',
         actions: [
             {
-                id: 'a17',
-                title: 'Auditoria de horários ociosos + Promoção',
+                id: 'a29',
+                title: 'Auditoria de Horários Ociosos',
                 time: '4 dias',
                 responsible: 'Gestor/Recepção',
                 tasks: [
-                    'Mapear horários com < 60% ocupação',
-                    'Criar promoção "Horários Inteligentes" (15% off)',
-                    'Divulgar via WhatsApp e Instagram',
-                    'Medir aumento de ocupação'
+                    '📌 Mapear todos os horários com menos de 60% de ocupação',
+                    '• Criar promoção "Horários Inteligentes" com desconto de 15%',
+                    '• Monitorar resultados e ajustar promoções conforme desempenho'
                 ],
-                delivery: 'Horários ociosos reduzidos em 30%+'
+                delivery: 'Relatório de horários ociosos. Campanha promocional ativa. Ocupação aumentada em 10-15%.'
             },
             {
-                id: 'a18',
-                title: 'Campanha de reativação de pacientes inativos',
+                id: 'a30',
+                title: 'Campanha de Reativação de Pacientes',
                 time: '5 dias',
                 responsible: 'Marketing/Recepção',
                 tasks: [
-                    'Segmentar pacientes inativos > 6 meses no CRM',
-                    'Criar oferta exclusiva "Volta pra Casa"',
-                    'Disparar via WhatsApp + SMS em lotes de 50/dia',
-                    'Medir taxa de retorno'
+                    '📌 Segmentar pacientes inativos há mais de 6 meses',
+                    '• Criar oferta exclusiva: "Volta pra casa", incentivando o retorno',
+                    '• Disparo via WhatsApp e SMS para comunicação direta'
                 ],
-                delivery: '50+ pacientes inativos reativados'
+                delivery: 'Base segmentada. Campanha ativa. Taxa de retorno prevista: 20-30% dos pacientes inativos.'
             },
             {
-                id: 'a19',
+                id: 'a31',
                 title: 'Programa de Indicação',
                 time: '3 dias',
                 responsible: 'Marketing/Gestor',
                 tasks: [
-                    'Criar sistema: "Indique 3 amigo, ganhe 1 consulta"',
-                    'Fazer cartões físicos na recepção',
-                    'Divulgar no Instagram',
-                    'Treinar recepção para entregar cartão pós-atendimento'
+                    '📌 Criar programa onde paciente indica amigo → ambos recebem desconto ou brinde',
+                    '• Utilizar QR Code e links rastreáveis para monitoramento de desempenho'
                 ],
-                delivery: '20+ novos pacientes via indicação'
+                delivery: 'Programa implementado. Monitoramento ativo. Expectativa: 5-10% crescimento de novos pacientes.'
+            },
+            {
+                id: 'a32',
+                title: 'Upsell Inteligente',
+                time: '4 dias',
+                responsible: 'Gestor/Atendimento',
+                tasks: [
+                    '📌 Após cada consulta, sugerir check-up ou exame complementar',
+                    '• Oferecer pacotes anuais com desconto (ex.: 4 consultas + exames)',
+                    '• Treinar equipe para apresentar oportunidades de upsell de forma natural e persuasiva'
+                ],
+                projectedImpact: [
+                    'Horários ociosos: +10-15% ocupação',
+                    'Reativação: 20-30% de pacientes inativos retornando',
+                    'Indicação: 5-10% novos pacientes',
+                    'Upsell: aumento de 15-25% no ticket médio'
+                ],
+                checklist: [
+                    'Redução de horários ociosos em 30% ou mais',
+                    '50+ pacientes inativos reativados',
+                    '20+ novos pacientes via indicação',
+                    '10%+ dos atendimentos com upsell realizado'
+                ],
+                delivery: 'Scripts e fluxos implementados. Conversão esperada: 10%+. Ticket médio: +15-25%.'
             }
         ]
     },
