@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plano de Crescimento da Clínica Vitória - Dashboard interativo de gestão">
+    <title>Plano de Crescimento - Clínica Vitória v2.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg-decoration">
+        <div class="bg-circle bg-circle-1"></div>
+        <div class="bg-circle bg-circle-2"></div>
+        <div class="bg-circle bg-circle-3"></div>
+    </div>
+
+    <div class="container">
+        <header class="header" id="header">
+            <div class="header-content">
+                <div class="header-left">
+                    <div class="logo">
+                        <div class="logo-icon">💙</div>
+                        <div class="logo-text">
+                            <h1>Plano de Crescimento</h1>
+                            <p>Clínica Vitória v2.0</p>
+                        </div>
+                    </div>
+                    <div class="header-info">
+                        <span class="badge badge-location">📍 Vitória da Conquista – BA</span>
+                        <span class="badge badge-time">⏱️ 90 Dias - Fase 1</span>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="progress-ring-container">
+                        <svg class="progress-ring" viewBox="0 0 120 120">
+                            <circle class="progress-ring-bg" cx="60" cy="60" r="52"/>
+                            <circle class="progress-ring-fill" cx="60" cy="60" r="52" id="progressRing"/>
+                        </svg>
+                        <div class="progress-text">
+                            <span class="progress-value" id="progressValue">0</span>
+                            <span class="progress-label">%</span>
+                        </div>
+                    </div>
+                    <span class="progress-subtitle">Progresso Geral</span>
+                </div>
+            </div>
+        </header>
+
+        <nav class="nav-tabs" id="navTabs">
+            <button class="nav-tab active" data-tab="cronograma">📅 Cronograma</button>
+            <button class="nav-tab" data-tab="diagnostico">📋 Diagnóstico</button>
+            <button class="nav-tab" data-tab="metodo5s">⭐ Método 5S</button>
+            <button class="nav-tab" data-tab="kpis">📊 KPIs</button>
+            <button class="nav-tab" data-tab="scripts">💬 Scripts</button>
+            <button class="nav-tab" data-tab="orcamento">💰 Orçamento</button>
+        </nav>
+
+        <main class="main-content">
+            <section class="tab-content active" id="tab-cronograma">
+                <div class="section-header">
+                    <h2>Cronograma de Entregas Semanais</h2>
+                    <p>Acompanhe o progresso de cada fase do plano de 90 dias</p>
+                </div>
+                <div class="phases-container" id="phasesContainer"></div>
+            </section>
+
+            <section class="tab-content" id="tab-diagnostico">
+                <div class="section-header">
+                    <h2>Diagnóstico Geral</h2>
+                    <p>Onde estamos e principais gargalos identificados</p>
+                </div>
+                <div class="diagnostico-grid" id="diagnosticoGrid"></div>
+            </section>
+
+            <section class="tab-content" id="tab-metodo5s">
+                <div class="section-header">
+                    <h2>Método 5S</h2>
+                    <p>Base do crescimento sustentável</p>
+                </div>
+                <div class="metodologia-5s" id="metodo5sContainer"></div>
+            </section>
+
+            <section class="tab-content" id="tab-kpis">
+                <div class="section-header">
+                    <h2>KPIs de Sucesso</h2>
+                    <p>Como saber se funciona</p>
+                </div>
+                <div class="kpis-grid" id="kpisGrid"></div>
+            </section>
+
+            <section class="tab-content" id="tab-scripts">
+                <div class="section-header">
+                    <h2>Scripts Prontos para Uso</h2>
+                    <p>Modelos de mensagem otimizados</p>
+                </div>
+                <div class="scripts-container" id="scriptsContainer"></div>
+            </section>
+
+            <section class="tab-content" id="tab-orcamento">
+                <div class="section-header">
+                    <h2>Orçamento e Recursos</h2>
+                    <p>Investimento estimado para os 90 dias</p>
+                </div>
+                <div class="orcamento-container" id="orcamentoContainer"></div>
+            </section>
+        </main>
+
+        <footer class="footer" id="footer"></footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
