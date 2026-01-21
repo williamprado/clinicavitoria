@@ -15,15 +15,30 @@ const phases = [
         actions: [
             {
                 id: 'a1',
-                title: 'Criar Gmail corporativo (@clinicavitoria.com.br)',
-                time: '1 dia',
-                responsible: 'Gestor/TI',
+                title: 'Infraestrutura Técnica para Crescimento Escalável',
+                time: '3-5 dias',
+                responsible: 'TI/Gestor',
                 tasks: [
-                    'Registrar conta Google Workspace',
-                    'Configurar domínio',
-                    'Criar e-mails para equipe principal'
+                    'Provisionamento de conta na Cloudflare com migração e atualização dos registros DNS para os nameservers da Cloudflare',
+                    'Otimização de performance, aumento da segurança (proteção contra DDoS, firewall e SSL)',
+                    'Centralização do recebimento dos e-mails corporativos em provedor principal (Google Workspace ou Microsoft Outlook)',
+                    'Criação de e-mails comerciais por setor:',
+                    '• atendimento@clinicavitoriavc.com.br (Atendimento/Pacientes)',
+                    '• agendamento@clinicavitoriavc.com.br (Agendamentos)',
+                    '• convenios@clinicavitoriavc.com.br (Convênios)',
+                    '• financeiro@clinicavitoriavc.com.br (Financeiro)',
+                    '• suporte@clinicavitoriavc.com.br (Suporte/SAC)',
+                    '• administrativo@clinicavitoriavc.com.br (Administrativo/RH)',
+                    '• comercial@clinicavitoriavc.com.br (Comercial/Marketing)',
+                    '• diretoria@clinicavitoriavc.com.br (Diretoria/Gestão)'
                 ],
-                delivery: 'Gmail corporativo ativo e configurado'
+                benefits: [
+                    'Comunicação mais rápida e clara',
+                    'Evita duplicidade de mensagens',
+                    'Facilita automação, integrações e delegação de equipe',
+                    'Escala bem com CRM, WhatsApp e sistemas de agendamento'
+                ],
+                delivery: 'Cloudflare configurado com DNS migrado, SSL ativo e 8 e-mails corporativos funcionando'
             },
             {
                 id: 'a2',
