@@ -4,7 +4,7 @@ Dashboard interativo para acompanhamento do Plano de Crescimento da Clínica Vit
 
 ## 🚀 Funcionalidades
 
-- **Cronograma de 90 dias** com checklist interativo
+- **Cronograma de 18 semanas** com checklist interativo
 - **Diagnóstico** da situação atual da clínica
 - **Método 5S** aplicado à gestão
 - **KPIs** de acompanhamento

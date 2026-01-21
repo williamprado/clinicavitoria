@@ -19,6 +19,7 @@ const phases = [
                 time: '3-5 dias',
                 responsible: 'TI/Gestor',
                 tasks: [
+                    'Criação de e-mail corporativo no Google Gmail para gerenciamento da base de dados. Implementação do Supabase como Data Lake, atuando como repositório centralizado para armazenamento e gerenciamento de dados.',
                     'Provisionamento de conta na Cloudflare com migração e atualização dos registros DNS para os nameservers da Cloudflare',
                     'Otimização de performance, aumento da segurança (proteção contra DDoS, firewall e SSL)',
                     'Centralização do recebimento dos e-mails corporativos em provedor principal (Google Workspace ou Microsoft Outlook)',
@@ -463,7 +464,7 @@ const phases = [
         color: '#f59e0b',
         actions: [
             {
-                id: 'a11',
+                id: 'a21',
                 title: 'Migrar para WhatsApp API Oficial',
                 time: '3 dias',
                 responsible: 'TI/Suporte Externo',
@@ -476,7 +477,7 @@ const phases = [
                 delivery: 'WhatsApp API ativa e recebendo mensagens'
             },
             {
-                id: 'a12',
+                id: 'a22',
                 title: 'Implementar IA de atendimento (GPT-4 via n8n)',
                 time: '5 dias',
                 responsible: 'TI + Suporte Externo',
@@ -490,7 +491,7 @@ const phases = [
                 delivery: 'IA respondendo corretamente em 90% dos casos'
             },
             {
-                id: 'a13',
+                id: 'a23',
                 title: 'Configurar follow-up automático',
                 time: '2 dias',
                 responsible: 'TI/Marketing',
@@ -602,9 +603,9 @@ const phases = [
         ]
     },
     {
-        id: 'semanas-9-11',
+        id: 'semanas-14-16',
         name: 'Otimização de Receita',
-        weeks: 'Semanas 9-11',
+        weeks: 'Semanas 14-16',
         objective: 'Aumentar o faturamento da clínica sem aumentar os custos de aquisição, por meio da maximização da ocupação da agenda, reativação de pacientes inativos, programas de indicação e estratégias de upsell inteligentes.',
         icon: '💰',
         color: '#10b981',
@@ -671,15 +672,15 @@ const phases = [
         ]
     },
     {
-        id: 'semanas-12-13',
+        id: 'semanas-17-18',
         name: 'Gestão & Escala',
-        weeks: 'Semanas 12-13',
+        weeks: 'Semanas 17-18',
         objective: 'Consolidar processos e preparar próxima fase',
         icon: '📈',
         color: '#8b5cf6',
         actions: [
             {
-                id: 'a20',
+                id: 'a33',
                 title: 'Dashboard Executivo',
                 time: '4 dias',
                 responsible: 'Gestor/TI',
@@ -692,7 +693,7 @@ const phases = [
                 delivery: 'Dashboard acessível por mobile e desktop'
             },
             {
-                id: 'a21',
+                id: 'a34',
                 title: 'Playbook de Processos',
                 time: '3 dias',
                 responsible: 'Gestor',
@@ -705,7 +706,7 @@ const phases = [
                 delivery: 'Playbook completo e testado'
             },
             {
-                id: 'a22',
+                id: 'a35',
                 title: 'Prospecção B2B Ativa',
                 time: '5 dias',
                 responsible: 'Comercial/Gestor',
@@ -977,6 +978,261 @@ function renderDiagnostico() {
     if (!container) return;
 
     container.innerHTML = `
+        <!-- Seção 1: Avaliação Digital -->
+        <div class="diagnostico-section full-width">
+            <div class="section-title-bar">
+                <span class="section-icon">🌐</span>
+                <h3>1. Avaliação Digital</h3>
+            </div>
+            <div class="digital-evaluation-grid">
+                <div class="eval-card google-rating">
+                    <div class="eval-icon">⭐</div>
+                    <div class="eval-content">
+                        <span class="eval-label">Avaliação Google</span>
+                        <span class="eval-value">3.7 ⭐</span>
+                    </div>
+                </div>
+                <div class="eval-card website">
+                    <div class="eval-icon">🌐</div>
+                    <div class="eval-content">
+                        <span class="eval-label">Site Oficial</span>
+                        <a href="https://clinicavitoriavc.com.br" target="_blank" class="eval-link">clinicavitoriavc.com.br</a>
+                    </div>
+                </div>
+                <div class="eval-card social instagram">
+                    <div class="eval-icon">📸</div>
+                    <div class="eval-content">
+                        <span class="eval-label">Instagram</span>
+                        <span class="eval-value">16.000 seguidores</span>
+                        <span class="eval-handle">@clinicavitoriavc</span>
+                    </div>
+                </div>
+                <div class="eval-card social facebook">
+                    <div class="eval-icon">👥</div>
+                    <div class="eval-content">
+                        <span class="eval-label">Facebook</span>
+                        <span class="eval-value">5.000 seguidores</span>
+                        <span class="eval-handle">Clínica Vitória VCA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção 2: Modelo de Negócio -->
+        <div class="diagnostico-section full-width">
+            <div class="section-title-bar">
+                <span class="section-icon">🏢</span>
+                <h3>2. Modelo de Negócio</h3>
+            </div>
+            <div class="business-model-grid">
+                <div class="business-item">
+                    <span class="business-label">Tipo:</span>
+                    <span class="business-value">Clínica popular, voltada para atendimento médico e exames acessíveis à população sem plano de saúde.</span>
+                </div>
+                <div class="business-item highlight-mission">
+                    <span class="business-label">🎯 Missão:</span>
+                    <span class="business-value">Oferecer atendimento humanizado, eficiente e de baixo custo.</span>
+                </div>
+                <div class="business-item highlight-vision">
+                    <span class="business-label">🔭 Visão:</span>
+                    <span class="business-value">Tornar-se a maior rede de clínicas populares do sudoeste da Bahia.</span>
+                </div>
+                <div class="business-item location">
+                    <span class="business-label">📍 Localização:</span>
+                    <span class="business-value">Rua 2 de Julho, 289, Centro, Vitória da Conquista – BA</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção 3: Estrutura e Serviços -->
+        <div class="diagnostico-section full-width">
+            <div class="section-title-bar">
+                <span class="section-icon">🏥</span>
+                <h3>3. Estrutura e Serviços</h3>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h4>🩺 Especialidades</h4>
+                    <ul>
+                        <li>Consultas médicas em diversas áreas</li>
+                        <li>Exames laboratoriais</li>
+                        <li>Exames de imagem</li>
+                    </ul>
+                </div>
+                <div class="service-card highlight">
+                    <h4>⚡ Diferenciais Competitivos</h4>
+                    <ul>
+                        <li>✅ Agendamento rápido e simplificado</li>
+                        <li>✅ Preços acessíveis</li>
+                        <li>✅ Alternativa direta ao SUS</li>
+                        <li>✅ Alternativa a planos de saúde de alto custo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção 4: Faturamento e Dados Empresariais -->
+        <div class="diagnostico-section full-width">
+            <div class="section-title-bar">
+                <span class="section-icon">💰</span>
+                <h3>4. Faturamento e Dados Empresariais</h3>
+            </div>
+            <div class="financial-grid">
+                <div class="financial-card cnpj">
+                    <div class="financial-icon">📄</div>
+                    <div class="financial-content">
+                        <span class="financial-label">CNPJ</span>
+                        <span class="financial-value">Clínica Vitória Ltda</span>
+                        <span class="financial-detail">02.200.214/0004-80</span>
+                        <span class="financial-badge">EPP - Empresa de Pequeno Porte</span>
+                    </div>
+                </div>
+                <div class="financial-card revenue">
+                    <div class="financial-icon">📊</div>
+                    <div class="financial-content">
+                        <span class="financial-label">Estimativa de Faturamento Anual</span>
+                        <span class="financial-value-range">
+                            <span class="min">R$ 360.000</span>
+                            <span class="separator">a</span>
+                            <span class="max">R$ 4.800.000</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção 5: Estrutura Societária e Redes Sociais -->
+        <div class="diagnostico-section full-width">
+            <div class="section-title-bar">
+                <span class="section-icon">📱</span>
+                <h3>5. Análise de Presença Digital e Estratégia</h3>
+            </div>
+            <div class="presence-grid">
+                <div class="presence-card">
+                    <h4>👥 Estrutura Societária</h4>
+                    <p>Sociedade LTDA com decisores/sócios definidos</p>
+                </div>
+                <div class="presence-card">
+                    <h4>📸 Instagram/Facebook</h4>
+                    <ul>
+                        <li>Presença ativa (@clinicavitoriavc)</li>
+                        <li>Conteúdo: posts informativos sobre saúde</li>
+                        <li>Datas comemorativas</li>
+                        <li>Anúncios de especialidades semanais</li>
+                        <li>Linguagem direta com CTAs para WhatsApp</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção 6: Posicionamento Google (SEO e Local) -->
+        <div class="diagnostico-section full-width">
+            <div class="section-title-bar">
+                <span class="section-icon">🔍</span>
+                <h3>6. Posicionamento no Google (SEO e Local)</h3>
+            </div>
+            <div class="seo-grid">
+                <div class="seo-card positive">
+                    <h4>✅ Google Meu Negócio</h4>
+                    <p>Forte presença local, altamente relevante para buscas como "clínica popular em Vitória da Conquista"</p>
+                </div>
+                <div class="seo-card warning">
+                    <h4>⭐ Avaliação Google</h4>
+                    <span class="rating-display">3.7 ⭐</span>
+                    <p>Abaixo do ideal (meta: 4.3+)</p>
+                </div>
+                <div class="seo-card positive">
+                    <h4>📈 SEO Orgânico</h4>
+                    <p>Site otimizado para palavras-chave locais:</p>
+                    <ul>
+                        <li>"exames em Vitória da Conquista"</li>
+                        <li>"clínica médica centro VCA"</li>
+                    </ul>
+                </div>
+                <div class="seo-card negative">
+                    <h4>⚠️ Limitações SEO</h4>
+                    <ul>
+                        <li>Domínio genérico (.com.br)</li>
+                        <li>Blog com apenas 3 artigos desatualizados</li>
+                        <li>Alcance orgânico limitado</li>
+                        <li>Baixa autoridade digital</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção 7: Concorrência -->
+        <div class="diagnostico-section full-width">
+            <div class="section-title-bar">
+                <span class="section-icon">🏁</span>
+                <h3>7. Análise de Concorrência</h3>
+            </div>
+            <div class="competition-grid">
+                <div class="competition-card direct">
+                    <h4>🎯 Concorrentes Diretos</h4>
+                    <p class="subtitle">Clínicas Populares / Centros Médicos</p>
+                    <ul>
+                        <li><strong>Acesso Saúde:</strong> Rede nacional com forte presença local, modelo similar</li>
+                        <li><strong>Clínica Saúde Center:</strong> Shopping Conquista Sul, foco em conveniência e horários estendidos</li>
+                        <li><strong>Clínica DM Mais:</strong> Consultas acessíveis no centro da cidade</li>
+                    </ul>
+                </div>
+                <div class="competition-card indirect">
+                    <h4>🔄 Concorrentes Indiretos</h4>
+                    <ul>
+                        <li><strong>Hospitais Privados:</strong> Hospital Samur e IBR (público de planos de saúde)</li>
+                        <li><strong>Atendimento Público:</strong> Policlínica Regional (concorre via SUS)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção 8: Funil de Captação -->
+        <div class="diagnostico-section full-width">
+            <div class="section-title-bar">
+                <span class="section-icon">🎯</span>
+                <h3>8. Funil de Captação de Clientes</h3>
+            </div>
+            <div class="funnel-grid">
+                <div class="funnel-stage">
+                    <div class="stage-number">1</div>
+                    <div class="stage-content">
+                        <h4>🗺️ Google Meu Negócio (Porta de Entrada)</h4>
+                        <ul>
+                            <li>Canal mais forte devido à localização estratégica</li>
+                            <li>Buscas: "clínica popular em VCA", "exame de sangue centro"</li>
+                            <li>Prova social: avaliações e fotos aumentam confiança</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="funnel-stage">
+                    <div class="stage-number">2</div>
+                    <div class="stage-content">
+                        <h4>📱 Conversão via WhatsApp (Fechamento)</h4>
+                        <ul>
+                            <li>Canal central de conversão</li>
+                            <li>Comunicação rápida e direta</li>
+                            <li>Sem formulários complexos</li>
+                            <li>Foco na necessidade imediata do paciente</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="funnel-stage warning">
+                    <div class="stage-number">3</div>
+                    <div class="stage-content">
+                        <h4>💸 Tráfego Pago (Inexistente)</h4>
+                        <ul class="warning-list">
+                            <li>❌ Sem Business Manager no Facebook</li>
+                            <li>❌ Sem anúncios ativos ou inativos</li>
+                            <li>❌ Possível impulsionamento não estruturado no Instagram</li>
+                            <li>❌ Sem anúncios no Google Ads</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção: Pontos Fortes e Gargalos (Original melhorado) -->
         <div class="diagnostico-card positive">
             <div class="card-header">
                 <div class="card-icon positive">✅</div>
@@ -987,6 +1243,7 @@ function renderDiagnostico() {
                 <li><span class="check">✅</span> Forte presença local (Centro da cidade)</li>
                 <li><span class="check">✅</span> Tráfego orgânico alto via Google Maps</li>
                 <li><span class="check">✅</span> WhatsApp é o coração da operação</li>
+                <li><span class="check">✅</span> Presença ativa em redes sociais (21k+ seguidores)</li>
                 <li><span class="check">⚠️</span> Boa demanda, porém baixa eficiência</li>
             </ul>
         </div>
@@ -1005,6 +1262,86 @@ function renderDiagnostico() {
                 <li><span class="alert">🔴</span> Processos não documentados</li>
             </ul>
         </div>
+
+        <!-- Seção 9: Pontos Críticos -->
+        <div class="diagnostico-section full-width critical-section">
+            <div class="section-title-bar critical">
+                <span class="section-icon">🚨</span>
+                <h3>9. Pontos Críticos Identificados</h3>
+            </div>
+            <div class="critical-grid">
+                <div class="critical-item">
+                    <span class="critical-icon">⚠️</span>
+                    <div class="critical-content">
+                        <h4>Foco Excessivo na Primeira Consulta</h4>
+                        <p>Consulta barata sem funil de upsell para exames complementares ou pacotes anuais</p>
+                    </div>
+                </div>
+                <div class="critical-item">
+                    <span class="critical-icon">⚠️</span>
+                    <div class="critical-content">
+                        <h4>Baixa Retenção Digital</h4>
+                        <ul>
+                            <li>Site funcional, mas não captura leads</li>
+                            <li>Ausência de Tag Manager</li>
+                            <li>Ausência de Pixel do Facebook</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="critical-item">
+                    <span class="critical-icon">⚠️</span>
+                    <div class="critical-content">
+                        <h4>Falta de Estratégia de Remarketing</h4>
+                        <p>Sem funil de vendas digital estruturado</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção 10: Oportunidades de Crescimento -->
+        <div class="diagnostico-section full-width opportunities-section">
+            <div class="section-title-bar opportunities">
+                <span class="section-icon">🚀</span>
+                <h3>10. Oportunidades de Crescimento</h3>
+            </div>
+            <div class="opportunities-grid">
+                <div class="opportunity-card">
+                    <span class="opportunity-number">1</span>
+                    <div class="opportunity-content">
+                        <h4>📈 Aumentar Conversão</h4>
+                        <p>Otimizar Google Meu Negócio e redes sociais para converter tráfego existente</p>
+                    </div>
+                </div>
+                <div class="opportunity-card">
+                    <span class="opportunity-number">2</span>
+                    <div class="opportunity-content">
+                        <h4>📱 Captação de Leads</h4>
+                        <p>Implantar sistema de captação via site e WhatsApp</p>
+                    </div>
+                </div>
+                <div class="opportunity-card">
+                    <span class="opportunity-number">3</span>
+                    <div class="opportunity-content">
+                        <h4>💰 Funil de Upsell</h4>
+                        <p>Estruturar promoção de check-ups e exames complementares</p>
+                    </div>
+                </div>
+                <div class="opportunity-card">
+                    <span class="opportunity-number">4</span>
+                    <div class="opportunity-content">
+                        <h4>📢 Campanhas Pagas</h4>
+                        <p>Criar campanhas segmentadas no Instagram, Facebook e Google Ads</p>
+                    </div>
+                </div>
+                <div class="opportunity-card">
+                    <span class="opportunity-number">5</span>
+                    <div class="opportunity-content">
+                        <h4>🔄 Remarketing</h4>
+                        <p>Implementar tagueamento, Pixel e remarketing para retenção e recorrência</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     `;
 
     // Add summary after grid
@@ -1021,6 +1358,21 @@ function renderDiagnostico() {
         </div>
     `;
     container.parentNode.appendChild(summary);
+
+    // Add observations section
+    const observations = document.createElement('div');
+    observations.className = 'observations-section';
+    observations.innerHTML = `
+        <div class="observations-header">
+            <span class="obs-icon">📋</span>
+            <h4>Observações Estratégicas</h4>
+        </div>
+        <div class="observations-content">
+            <p>✅ A presença digital é relevante, mas há espaço para <strong>otimização de avaliações Google</strong> e <strong>engajamento em redes sociais</strong>, considerando o público-alvo popular.</p>
+            <p>✅ Estratégias de <strong>marketing digital</strong>, <strong>reativação de pacientes</strong> e <strong>aumento de receita</strong> podem ser estruturadas com base neste diagnóstico.</p>
+        </div>
+    `;
+    container.parentNode.appendChild(observations);
 }
 
 // Render 5S
@@ -1117,7 +1469,7 @@ function renderKPIs() {
                     <span class="kpi-icon">💰</span>
                     <span class="kpi-label">Aumento Faturamento</span>
                     <span class="kpi-value">+20%</span>
-                    <span class="kpi-source">Comparativo 90 dias</span>
+                    <span class="kpi-source">Comparativo 18 semanas</span>
                 </div>
                 <div class="kpi-card">
                     <span class="kpi-icon">💵</span>
@@ -1188,8 +1540,8 @@ function renderOrcamento() {
                     <tr class="total-row">
                         <td><strong>TOTAL</strong></td>
                         <td><strong>~R$ 1.430/mês</strong></td>
-                        <td><strong>~R$ 6.290</strong></td>
-                        <td><strong>90 dias</strong></td>
+                        <td><strong>~R$ 6.435</strong></td>
+                        <td><strong>18 semanas</strong></td>
                     </tr>
                 </tfoot>
             </table>
@@ -1199,7 +1551,7 @@ function renderOrcamento() {
             <div class="roi-grid">
                 <div class="roi-card">
                     <span class="roi-label">Investimento</span>
-                    <span class="roi-value">R$ 6.290</span>
+                    <span class="roi-value">R$ 6.435</span>
                 </div>
                 <div class="roi-card highlight">
                     <span class="roi-label">Aumento de Receita</span>
@@ -1226,7 +1578,7 @@ function renderFooter() {
     footer.innerHTML = `
         <div class="footer-header">
             <h2>🚀 Fase 2 - Visão de Futuro</h2>
-            <p>Após os 90 dias, com a casa organizada</p>
+            <p>Após as 18 semanas, com a casa organizada</p>
         </div>
         <div class="footer-grid">
             <div class="footer-card">
