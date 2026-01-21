@@ -517,13 +517,13 @@ function updateProgressRing() {
     const progress = calculateProgress();
     const progressRing = document.getElementById('progressRing');
     const progressValue = document.getElementById('progressValue');
-    
+
     if (progressRing && progressValue) {
         const circumference = 2 * Math.PI * 52;
         const offset = circumference - (progress / 100) * circumference;
         progressRing.style.strokeDashoffset = offset;
         progressValue.textContent = progress;
-        
+
         // Update stroke color based on progress
         if (progress < 30) {
             progressRing.style.stroke = '#ef4444';
@@ -540,7 +540,7 @@ function toggleCheck(actionId) {
     checkedItems[actionId] = !checkedItems[actionId];
     saveState();
     updateProgressRing();
-    
+
     const checkEl = document.querySelector(`[data-action="${actionId}"]`);
     if (checkEl) {
         checkEl.classList.toggle('checked', checkedItems[actionId]);
@@ -560,7 +560,7 @@ function togglePhase(phaseId) {
 function renderPhases() {
     const container = document.getElementById('phasesContainer');
     if (!container) return;
-    
+
     container.innerHTML = phases.map(phase => `
         <div class="phase-card" data-phase="${phase.id}">
             <div class="phase-header" onclick="togglePhase('${phase.id}')">
@@ -618,7 +618,7 @@ function renderPhases() {
 function renderDiagnostico() {
     const container = document.getElementById('diagnosticoGrid');
     if (!container) return;
-    
+
     container.innerHTML = `
         <div class="diagnostico-card positive">
             <div class="card-header">
@@ -649,7 +649,7 @@ function renderDiagnostico() {
             </ul>
         </div>
     `;
-    
+
     // Add summary after grid
     const summary = document.createElement('div');
     summary.className = 'diagnostico-summary';
@@ -670,7 +670,7 @@ function renderDiagnostico() {
 function render5S() {
     const container = document.getElementById('metodo5sContainer');
     if (!container) return;
-    
+
     container.innerHTML = metodo5s.map(s => `
         <div class="s-card">
             <div class="s-number" style="background: ${s.color}">${s.numero}</div>
@@ -683,7 +683,7 @@ function render5S() {
             </div>
         </div>
     `).join('');
-    
+
     // Add manifesto
     const manifesto = document.createElement('div');
     manifesto.className = 'manifesto-box';
@@ -705,7 +705,7 @@ function render5S() {
 function renderKPIs() {
     const container = document.getElementById('kpisGrid');
     if (!container) return;
-    
+
     container.innerHTML = `
         <div class="kpi-category">
             <h3>⚙️ Operacional</h3>
@@ -783,7 +783,7 @@ function renderKPIs() {
 function renderScripts() {
     const container = document.getElementById('scriptsContainer');
     if (!container) return;
-    
+
     container.innerHTML = scripts.map(script => `
         <div class="script-card">
             <div class="script-header">
@@ -804,7 +804,7 @@ function renderScripts() {
 function renderOrcamento() {
     const container = document.getElementById('orcamentoContainer');
     if (!container) return;
-    
+
     container.innerHTML = `
         <div class="orcamento-table-wrapper">
             <table class="orcamento-table">
@@ -865,7 +865,7 @@ function renderOrcamento() {
 function renderFooter() {
     const footer = document.getElementById('footer');
     if (!footer) return;
-    
+
     footer.innerHTML = `
         <div class="footer-header">
             <h2>🚀 Fase 2 - Visão de Futuro</h2>
@@ -909,12 +909,12 @@ function copyScript(scriptId) {
 function showToast(message) {
     const existing = document.querySelector('.toast');
     if (existing) existing.remove();
-    
+
     const toast = document.createElement('div');
     toast.className = 'toast';
     toast.textContent = message;
     document.body.appendChild(toast);
-    
+
     setTimeout(() => {
         toast.classList.add('hide');
         setTimeout(() => toast.remove(), 300);
@@ -927,11 +927,11 @@ function initTabs() {
     tabs.forEach(tab => {
         tab.addEventListener('click', () => {
             const tabId = tab.dataset.tab;
-            
+
             // Update active tab
             tabs.forEach(t => t.classList.remove('active'));
             tab.classList.add('active');
-            
+
             // Update active content
             document.querySelectorAll('.tab-content').forEach(content => {
                 content.classList.remove('active');
@@ -945,7 +945,7 @@ function initTabs() {
 function addSVGDefs() {
     const svg = document.querySelector('.progress-ring');
     if (!svg) return;
-    
+
     const defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
     defs.innerHTML = `
         <linearGradient id="progressGradient" x1="0%" y1="0%" x2="100%" y2="100%">
